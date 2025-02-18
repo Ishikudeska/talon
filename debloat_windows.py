@@ -67,8 +67,8 @@ def apply_registry_changes():
             (winreg.HKEY_CURRENT_USER, r"Control Panel\\Desktop\\WindowMetrics", "MinAnimate", winreg.REG_DWORD, 0),# Disable minimize/maximize animations
             (winreg.HKEY_CURRENT_USER, r"Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "ExtendedUIHoverTime", winreg.REG_DWORD, 1),# Reduce hover time for tooltips and UI elements
             (winreg.HKEY_CURRENT_USER, r"Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "HideFileExt", winreg.REG_DWORD, 0),# Show file extensions in Explorer (useful for security and organization)
-            (winreg.HKEY_CURRENT_USER, r"Control Panel\\Colors", "Hilight", winreg.REG_SZ, "0 0 0"), # Sets highlight color to black
-            (winreg.HKEY_CURRENT_USER, r"Control Panel\\Colors", "HotTrackingColor", winreg.REG_SZ, "0 0 0"), # Sets the click-and-drag box color to black
+            (winreg.HKEY_CURRENT_USER, r"Control Panel\\Colors", "Hilight", winreg.REG_SZ, "76, 75, 74"), # Sets highlight color to as dark a grey as windows allows
+            (winreg.HKEY_CURRENT_USER, r"Control Panel\\Colors", "HotTrackingColor", winreg.REG_SZ, "76, 75, 74"), # Sets the click-and-drag box color to as dark a grey as windows allows
             (winreg.HKEY_CURRENT_USER, r"Control Panel\\Mouse", "MouseSpeed", winreg.REG_DWORD, "0"), #Turns off mouse acceleration
             (winreg.HKEY_CURRENT_USER, r"Software\\Microsoft\Windows\\CurrentVersion\\Explorer\\Advanced", "HideFileExt", winreg.REG_DWORD, "0") #show file extensions (.exe, .txt, .pdf, etc.)
             (winreg.HKEY_CURRENT_USER, r"Control Panel\\Desktop", "DragFullWindows", winreg.REG_DWORD, "1") #show window contents while dragging
